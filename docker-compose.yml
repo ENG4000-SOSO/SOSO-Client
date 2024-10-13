@@ -5,5 +5,7 @@ services:
     image: soso-client
     build:
       context: ./
+    environment:
+      - NEXT_PUBLIC_BASE_API_URL=${NEXT_PUBLIC_BASE_API_URL:-http://localhost:5001}
     ports:
       - 3000:3000
