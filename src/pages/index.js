@@ -75,7 +75,7 @@ export default function Home() {
         setSatellites(response.data);
       })
       .catch((err) => {
-        console.log("Satellite Endpoint error: " + JSON(err));
+        // console.log("Satellite Endpoint error: " + JSON(err));
       });
   }, []);
 
